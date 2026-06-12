@@ -8,7 +8,7 @@ package proyecto1lab;
  *
  * @author alira
  */
-public interface Renumerado {
+public interface Remunerado {
    
     double calcularPagoQuincenal();
     
