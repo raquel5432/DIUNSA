@@ -1,7 +1,7 @@
 
 package proyecto1lab;
 
-public class EmpleadoPorHora {
+public class EmpleadoPorHora extends Empleado{
 
     private int horas; 
     private double tarifa; 
@@ -14,6 +14,7 @@ public class EmpleadoPorHora {
         this.extras = extras; 
     }
     
+    @Override
     public double calcularPagoQuincenal(){
         double pago = tarifa * horas; 
         if(extras > 80 ){
@@ -21,5 +22,10 @@ public class EmpleadoPorHora {
         pago += horasExtrasSobreLimite * tarifa * 1.5;
     }
         return pago; 
+    }
+
+    @Override
+    public String getCategoria() {
+        return "Por Hora"; 
     }
 }
