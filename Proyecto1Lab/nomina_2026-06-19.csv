@@ -1,0 +1,11 @@
+id,nombre,departamento,tipo,bruto,deducciones,neto
+EMP-001,Carlos Mejia,Logistica,Por Hora,9600.00,0.00,9600.00
+EMP-002,Maria Reconco,Ventas,Por Hora,16200.00,3900.00,12300.00
+EMP-003,Ana Lopez,RRHH,Fijo,14000.00,7350.00,6650.00
+EMP-004,Jose Hernandez,Tecnologia,Fijo,12500.00,6562.50,5937.50
+EMP-005,Luis Ramirez,Logistica,Fijo,18000.00,8595.00,9405.00
+EMP-006,Elena Flores,Ventas,Fijo,20000.00,9075.00,10925.00
+EMP-007,Jorge Mejia,Gerencia,Fijo,30000.00,13612.50,16387.50
+EMP-008,Sonia Castillo,Tecnologia,Fijo,13000.00,6825.00,6175.00
+0012,Jorge Andres,Finanzas,Por Hora,11200.00,0.00,11200.00
+TOTALES,,,,144500.00,55920.00,88580.00
