@@ -17,6 +17,7 @@ public class Supervisor extends EmpleadoFijo{
         }
         
     }
+    @Override
      public double calcularPagoQuincenal(){
         double pagoBase = super.calcularPagoQuincenal();
         double bono = pagoBase * porcentajeBono; 
