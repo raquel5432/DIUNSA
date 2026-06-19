@@ -13,7 +13,7 @@ public enum TipoContrato {
     TIEMPO_COMPLETO("Tiempo Completo", 0.30),
     MEDIO_TIEMPO("Medio Tiempo",0.20),
     POR_HORA("Por Horas", 0.01),
-    TEMPORAL("Tempora", 0.15);
+    TEMPORAL("Temporal", 0.15);
     
     private final String descripcion;
     private final double factorPrestaciones;
