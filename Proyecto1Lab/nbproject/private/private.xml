@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/Empleado.java</file>
             <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/EmpleadoFijo.java</file>
             <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/EmpleadoPorHora.java</file>
@@ -23,6 +24,9 @@
             <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/PanelRegistrar.java</file>
             <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/PanelSidebar.java</file>
             <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/SistemaRRHHGUI.java</file>
+=======
+            <file>file:/C:/Users/spodi/OneDrive/Escritorio/DIUNSA/diu/DIUNSA/Proyecto1Lab/src/proyecto1lab/Gerente.java</file>
+>>>>>>> eb55ce11028e1745bb6405b32aad14488917c20d
         </group>
     </open-files>
 </project-private>

@@ -15,7 +15,8 @@ private double porcentajeComision;
         this.ventasDepartamento = ventasDepartamento; 
     }
 
-    public double calculcarPagoQuincenal(){
+@Override
+    public double calcularPagoQuincenal(){
         double pagoSupervisor = super.calcularPagoQuincenal(); 
         double comision = ventasDepartamento * porcentajeComision;
         return pagoSupervisor + comision; 
