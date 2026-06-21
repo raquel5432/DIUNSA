@@ -67,6 +67,14 @@ public class GestorNomina {
         return false;
     }
     
+    public boolean despedirEmpleado(String id) {
+        boolean eliminado = eliminarEmpleado(id);
+        if (eliminado) {
+            guardarBackupEmpleados();
+        }
+        return eliminado;
+    }
+    
     public Empleado buscarPorId(String id) {
         for (int i = 0; i < cantidadEmpleados; i++) {
             if (empleados[i].getId() != null && empleados[i].getId().equals(id)) {

@@ -1,17 +1,11 @@
-[2026-06-19 15:45:59] ALTA: Empleado agregado (Carlos Mejia, id=EMP-001).
-[2026-06-19 15:45:59] ALTA: Empleado agregado (Maria Reconco, id=EMP-002).
-[2026-06-19 15:45:59] ALTA: Empleado agregado (Ana Lopez, id=EMP-003).
-[2026-06-19 15:45:59] ALTA: Empleado agregado (Jose Hernandez, id=EMP-004).
-[2026-06-19 15:45:59] ALTA: Empleado agregado (Luis Ramirez, id=EMP-005).
-[2026-06-19 15:45:59] ALTA: Empleado agregado (Elena Flores, id=EMP-006).
-[2026-06-19 15:45:59] ALTA: Empleado agregado (Jorge Mejia, id=EMP-007).
-[2026-06-19 15:45:59] ALTA: Empleado agregado (Sonia Castillo, id=EMP-008).
-[2026-06-19 15:45:59] BINARIO: historial_totales.bin no existe todavia. No hay historial previo.
-[2026-06-19 15:46:15] BINARIO: historial_totales.bin no existe todavia. No hay historial previo.
-[2026-06-19 15:47:52] ALTA: Empleado agregado (Jorge Andres, id=0012).
-[2026-06-19 15:48:06] CSV: Reporte de nomina generado en nomina_2026-06-19.csv (9 empleados).
-[2026-06-19 15:48:15] BINARIO: historial_totales.bin no existe todavia. No hay historial previo.
-[2026-06-19 15:48:20] BINARIO: historial_totales.bin no existe todavia. No hay historial previo.
-[2026-06-19 15:48:45] BINARIO: Totales del periodo '2026- Q3' agregados a historial_totales.bin (append).
-[2026-06-19 15:48:46] BINARIO: 1 registro(s) cargados de historial_totales.bin.
-[2026-06-19 15:49:24] BINARIO: 1 registro(s) cargados de historial_totales.bin.
+[2026-06-21 16:21:20] BINARIO: historial_totales.bin no existe todavia. No hay historial previo.
+[2026-06-21 16:21:24] BACKUP: empleados_backup.bin no existe. Se inicia con arreglo vacio.
+[2026-06-21 16:21:29] BINARIO: historial_totales.bin no existe todavia. No hay historial previo.
+[2026-06-21 16:27:46] ALTA: Empleado agregado (Javier Edgardo Figueroa, id=EMP-001).
+[2026-06-21 16:42:10] BINARIO: historial_totales.bin no existe todavia. No hay historial previo.
+[2026-06-21 16:42:12] BACKUP: empleados_backup.bin no existe. Se inicia con arreglo vacio.
+[2026-06-21 16:42:19] BINARIO: historial_totales.bin no existe todavia. No hay historial previo.
+[2026-06-21 16:43:12] ALTA: Empleado agregado (Juan Gabriel Lopez, id=EMP-001).
+[2026-06-21 16:46:37] BAJA: Empleado eliminado (Juan Gabriel Lopez, id=EMP-001).
+[2026-06-21 16:46:37] BACKUP: 0 empleado(s) serializados en empleados_backup.bin.
+[2026-06-21 16:46:46] BACKUP: 0 empleado(s) serializados en empleados_backup.bin.

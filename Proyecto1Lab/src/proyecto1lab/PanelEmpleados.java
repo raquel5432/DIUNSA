@@ -17,10 +17,12 @@ import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
@@ -38,13 +40,15 @@ public class PanelEmpleados extends JPanel{
     private DefaultTableModel modelo;
     private JTextField campoBusqueda;
     private JComboBox<String> filtroTipo;
+    private Runnable onCambio;
 
     private static final String[] COLUMNAS = {
         "ID", "Nombre", "Departamento", "Tipo", "Contrato", "Pago Quincenal"
     };
 
-    public PanelEmpleados(GestorNomina gestor) {
+    public PanelEmpleados(GestorNomina gestor, Runnable onCambio) {
         this.gestor = gestor;
+        this.onCambio = onCambio;
         setLayout(new BorderLayout(0, 16));
         setBackground(DiuColors.BG_APP);
         setBorder(BorderFactory.createEmptyBorder(28, 28, 28, 28));
@@ -84,6 +88,9 @@ public class PanelEmpleados extends JPanel{
         DiuComponentes.BotonPrimario btnFiltrar = new DiuComponentes.BotonPrimario("Filtrar");
         btnFiltrar.addActionListener(e -> cargarDatos(campoBusqueda.getText(), (String) filtroTipo.getSelectedItem()));
 
+        DiuComponentes.BotonPeligro btnDespedir = new DiuComponentes.BotonPeligro("Despedir Empleado");
+        btnDespedir.addActionListener(e -> despedirSeleccionado());
+
         campoBusqueda.addActionListener(e ->
             cargarDatos(campoBusqueda.getText(), (String) filtroTipo.getSelectedItem()));
 
@@ -92,6 +99,7 @@ public class PanelEmpleados extends JPanel{
         toolbar.add(new JLabel("Tipo:"));
         toolbar.add(filtroTipo);
         toolbar.add(btnFiltrar);
+        toolbar.add(btnDespedir);
 
         JPanel encabezado = new JPanel(new BorderLayout());
         encabezado.setOpaque(false);
@@ -118,6 +126,7 @@ public class PanelEmpleados extends JPanel{
         tabla.setShowVerticalLines(false);
         tabla.setShowHorizontalLines(true);
         tabla.setGridColor(DiuColors.BORDER);
+        tabla.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         tabla.setSelectionBackground(new Color(0xDB, 0xEA, 0xFF));
         tabla.setSelectionForeground(DiuColors.TEXT_DARK);
         tabla.setDefaultEditor(Object.class, null);
@@ -225,5 +234,39 @@ public class PanelEmpleados extends JPanel{
             campoBusqueda != null ? campoBusqueda.getText() : "",
             filtroTipo != null ? (String) filtroTipo.getSelectedItem() : "Todos los tipos"
         );
+    }
+
+    private void despedirSeleccionado() {
+        int fila = tabla.getSelectedRow();
+        if (fila == -1) {
+            JOptionPane.showMessageDialog(this,
+                "Seleccione un empleado de la tabla para despedir.",
+                "Ningun empleado seleccionado", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+        String id = (String) modelo.getValueAt(fila, 0);
+        String nombre = (String) modelo.getValueAt(fila, 1);
+
+        int confirmacion = JOptionPane.showConfirmDialog(this,
+            "Esta seguro que desea despedir a " + nombre + " (" + id + ")?\n" +
+            "Esta accion eliminara todos sus datos de forma permanente.",
+            "Confirmar despido", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+
+        if (confirmacion != JOptionPane.YES_OPTION) {
+            return;
+        }
+
+        if (gestor.despedirEmpleado(id)) {
+            JOptionPane.showMessageDialog(this,
+                "Empleado despedido. Sus datos fueron eliminados del sistema.",
+                "Despido procesado", JOptionPane.INFORMATION_MESSAGE);
+            actualizar();
+            if (onCambio != null) onCambio.run();
+        } else {
+            JOptionPane.showMessageDialog(this,
+                "No se pudo despedir al empleado.",
+                "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 }

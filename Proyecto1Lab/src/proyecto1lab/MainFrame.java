@@ -85,7 +85,7 @@ public class MainFrame extends JFrame{
         areaPrincipal.setBackground(DiuColors.BG_APP);
 
         panelDashboard = new PanelDashboard(gestor);
-        panelEmpleados = new PanelEmpleados(gestor);
+        panelEmpleados = new PanelEmpleados(gestor, this::alAgregarEmpleado);
         panelRegistrar = new PanelRegistrar(gestor, this::alAgregarEmpleado);
         panelNomina    = new PanelNomina(gestor);
         panelHistorial = new PanelHistorial(gestor);

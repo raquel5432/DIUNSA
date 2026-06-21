@@ -38,8 +38,13 @@ public class SistemaRRHHGUI {
 
         // Lanzar en el Event Dispatch Thread de Swing
         SwingUtilities.invokeLater(() -> {
-            mostrarSplash();
+            mostrarLogin();
         });
+    }
+
+    private static void mostrarLogin() {
+        LoginFrame login = new LoginFrame(() -> mostrarSplash());
+        login.setVisible(true);
     }
 
     private static void configurarApariencia() {
@@ -150,66 +155,8 @@ public class SistemaRRHHGUI {
     private static void abrirVentanaPrincipal() {
         // Crear el gestor de nomina con datos de prueba precargados
         GestorNomina gestor = new GestorNomina();
-        cargarDatosDePrueba(gestor);
 
         MainFrame frame = new MainFrame(gestor);
         frame.setVisible(true);
-    }
-
-    /**
-     * Carga 8 empleados de prueba con montos en Lempiras.
-     * Puede eliminar este metodo en produccion y dejar que el
-     * sistema cargue desde el archivo de backup.
-     */
-    private static void cargarDatosDePrueba(GestorNomina gestor) {
-        // 2 EmpleadoPorHora
-        gestor.agregarEmpleado(new EmpleadoPorHora(
-            "EMP-001", "Carlos Mejia", "Logistica",
-            "2023-03-10", TipoContrato.POR_HORA, 9600.0, 120.0, 80
-        ));
-        gestor.agregarEmpleado(new EmpleadoPorHora(
-            "EMP-002", "Maria Reconco", "Ventas",
-            "2022-08-15", TipoContrato.POR_HORA, 16200.0, 120.0, 95  // horas extras
-        ));
-
-        // 2 EmpleadoFijo
-        EmpleadoFijo ef1 = new EmpleadoFijo(14000.0);
-        ef1.setId("EMP-003"); ef1.setNombre("Ana Lopez");
-        ef1.setDepartamento("RRHH"); ef1.setFechaIngreso("2021-01-20");
-        ef1.setContrato(TipoContrato.TIEMPO_COMPLETO); ef1.setSalarioBase(14000.0);
-        gestor.agregarEmpleado(ef1);
-
-        EmpleadoFijo ef2 = new EmpleadoFijo(12500.0);
-        ef2.setId("EMP-004"); ef2.setNombre("Jose Hernandez");
-        ef2.setDepartamento("Tecnologia"); ef2.setFechaIngreso("2022-05-10");
-        ef2.setContrato(TipoContrato.TIEMPO_COMPLETO); ef2.setSalarioBase(12500.0);
-        gestor.agregarEmpleado(ef2);
-
-        // 2 Supervisor
-        Supervisor sup1 = new Supervisor(18000.0, 0.10);
-        sup1.setId("EMP-005"); sup1.setNombre("Luis Ramirez");
-        sup1.setDepartamento("Logistica"); sup1.setFechaIngreso("2020-11-05");
-        sup1.setContrato(TipoContrato.TIEMPO_COMPLETO); sup1.setSalarioBase(18000.0);
-        gestor.agregarEmpleado(sup1);
-
-        Supervisor sup2 = new Supervisor(20000.0, 0.15);
-        sup2.setId("EMP-006"); sup2.setNombre("Elena Flores");
-        sup2.setDepartamento("Ventas"); sup2.setFechaIngreso("2019-07-22");
-        sup2.setContrato(TipoContrato.TIEMPO_COMPLETO); sup2.setSalarioBase(20000.0);
-        gestor.agregarEmpleado(sup2);
-
-        // 1 Gerente
-        Gerente ger = new Gerente(30000.0, 0.15, 850000.0, 0.02);
-        ger.setId("EMP-007"); ger.setNombre("Jorge Mejia");
-        ger.setDepartamento("Gerencia"); ger.setFechaIngreso("2018-02-01");
-        ger.setContrato(TipoContrato.TIEMPO_COMPLETO); ger.setSalarioBase(30000.0);
-        gestor.agregarEmpleado(ger);
-
-        // 1 EmpleadoFijo adicional
-        EmpleadoFijo ef3 = new EmpleadoFijo(13000.0);
-        ef3.setId("EMP-008"); ef3.setNombre("Sonia Castillo");
-        ef3.setDepartamento("Tecnologia"); ef3.setFechaIngreso("2023-09-01");
-        ef3.setContrato(TipoContrato.TIEMPO_COMPLETO); ef3.setSalarioBase(13000.0);
-        gestor.agregarEmpleado(ef3);
     }
 }
