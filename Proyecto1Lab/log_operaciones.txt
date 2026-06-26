@@ -1,0 +1,10 @@
+[2026-06-26 08:53:23] Inicio del sistema. Intentando cargar respaldo de empleados.
+[2026-06-26 08:53:23] BACKUP: empleados_backup.bin no existe. Se inicia con arreglo vacio.
+[2026-06-26 08:53:31] BACKUP: 0 empleado(s) serializados en empleados_backup.bin.
+[2026-06-26 08:53:31] Cierre del sistema por el usuario.
+[2026-06-26 08:54:19] Inicio del sistema. Intentando cargar respaldo de empleados.
+[2026-06-26 08:54:19] BACKUP: 0 empleado(s) restaurados desde empleados_backup.bin.
+[2026-06-26 08:54:22] BACKUP: 0 empleado(s) serializados en empleados_backup.bin.
+[2026-06-26 08:54:22] Cierre del sistema por el usuario.
+[2026-06-26 08:54:32] Inicio del sistema. Intentando cargar respaldo de empleados.
+[2026-06-26 08:54:32] BACKUP: 0 empleado(s) restaurados desde empleados_backup.bin.
