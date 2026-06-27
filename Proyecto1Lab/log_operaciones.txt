@@ -22,3 +22,16 @@
 [2026-06-26 08:54:32] Inicio del sistema. Intentando cargar respaldo de empleados.
 [2026-06-26 08:54:32] BACKUP: 0 empleado(s) restaurados desde empleados_backup.bin.
 >>>>>>> ee4412fd96e07e3833c996902900875c9e2856c6
+[2026-06-26 23:09:03] Inicio del sistema. Intentando cargar respaldo de empleados.
+[2026-06-26 23:09:03] BACKUP: 0 empleado(s) restaurados desde empleados_backup.bin.
+[2026-06-26 23:10:32] Inicio del sistema. Intentando cargar respaldo de empleados.
+[2026-06-26 23:10:32] BACKUP: 0 empleado(s) restaurados desde empleados_backup.bin.
+[2026-06-26 23:39:15] BINARIO: historial_totales.bin no existe todavia. No hay historial previo.
+[2026-06-26 23:39:18] BACKUP: 0 empleado(s) restaurados desde empleados_backup.bin.
+[2026-06-26 23:39:18] INICIO: Backup de empleados cargado exitosamente.
+[2026-06-26 23:40:40] ALTA: Empleado agregado (Juan Diego Rodrigues, id=EMP-001).
+[2026-06-26 23:41:20] BINARIO: historial_totales.bin no existe todavia. No hay historial previo.
+[2026-06-26 23:41:32] BINARIO: Totales del periodo '2020_Q2' agregados a historial_totales.bin (append).
+[2026-06-26 23:41:33] BINARIO: 1 registro(s) cargados de historial_totales.bin.
+[2026-06-26 23:43:28] Inicio del sistema. Intentando cargar respaldo de empleados.
+[2026-06-26 23:43:28] BACKUP: 0 empleado(s) restaurados desde empleados_backup.bin.

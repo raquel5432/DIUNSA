@@ -3,27 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/Empleado.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/EmpleadoFijo.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/EmpleadoPorHora.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/Gerente.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/Supervisor.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/Remunerado.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/TipoContrato.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/GestorNomina.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/DiuColors.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/DiuComponentes.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/MainFrame.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/PanelBuscar.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/PanelDashboard.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/PanelEmpleados.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/PanelHeader.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/PanelHistorial.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/PanelNomina.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/PanelRegistrar.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/PanelSidebar.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/SistemaRRHHGUI.java</file>
-            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/LoginFrame.java</file>
+            <file>file:/C:/Users/alira/DIUNSA/Proyecto1Lab/src/proyecto1lab/SistemaRRHH.java</file>
         </group>
     </open-files>
 </project-private>
